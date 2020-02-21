@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MemMori's Rock/Paper/Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <img id="sawpic" src="./data/sawgame.png">
+
+    <div id="results">
+        <h2>
+            <span id="text">First to 5 points wins. Choose wisely...</span>
+        </h2>
+    </div>
+
+    <div id="choices">
+        <button class="choice" onclick="choose(R), playRound(), gameOver()">ROCK</button>
+        <button class="choice" onclick="choose(P), playRound(), gameOver()">PAPER</button>
+        <button class="choice" onclick="choose(S), playRound(), gameOver()">SCISSORS</button>
+    </div>
+
+    <p></p>
+
+    <div id="scoreboard">
+        <h3>Player's Score:
+            <span id="pscore">0</span>
+        </h3>
+        <h3>Jigsaw's Score:
+            <span id="cscore">0</span>
+        </h3>
+    </div>
+
+    <div id="reset">
+        <button id="pagereset" onclick="location.reload()">START OVER</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
